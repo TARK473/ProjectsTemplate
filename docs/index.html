@@ -647,7 +647,7 @@
             <span>Hydrabad, Telangana.</span>
           </div>
         </div>
-        <form class="contact-form">
+        <form class="contact-form" onsubmit="return dummyForm()">
           <input type="text" placeholder="Your Name" required>
           <input type="email" placeholder="Your Email" required>
           <textarea placeholder="Your Message" required></textarea>
@@ -714,6 +714,13 @@
         alert('Contact: 6281119339');
       });
     });
+
+    function dummyForm() {
+      alert("This Form is For Showcase LOL :)");
+        // return true to allow form to submit
+        // return false to prevent form submission
+        return true;
+    }
   </script>
 </body>
 </html>
